@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body id="the_body">
+    <header>
+        <div>
+            <img src="./assets/lm-logo.png" alt="Logotype: computer with two dices on screen" id="logodice">
+            <h1>The dice game!</h1>
+        </div>
+        <div>
+            <input type="checkbox" name="change-theme" id="change-theme" onchange="change_dices()">
+            <label for="change-theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+            </label>
+        </div>
+    </header>
+    <section class="rules_box">
+        <div>
+            <img src="./assets/lm_1.png" alt="Dice face: one" class="dice_rules" id="dr1">
+            <p>Click the button and roll the dices;</p>
+        </div>
+        <div>
+            <img src="./assets/lm_2.png" alt="Dice face: two" class="dice_rules" id="dr2">
+            <p>The faces of the dice will be added together. The lowest result wins the round;</p>
+        </div>
+        <div>
+            <img src="./assets/lm_3.png" alt="Dice face: three" class="dice_rules" id="dr3">
+            <p>Whoever scores 5 points first wins the game.</p>
+        </div>
+    </section>
+
+    <section class="game">
+        <p class="text">Click to start ➛ <button type="button" id="roll_btn">Roll dices</button></p>
+        <p class="text">Click to restart ➛ <button type="button" id="restart_game" disabled>Restart</button></p>
+        <h3 id="player">Player</h3>
+        <div>
+            <img class="dices_game" id="d1" src="./assets/lm_6.png" alt="Dice face: six">
+            <img class="dices_game" id="d2" src="./assets/lm_6.png" alt="Dice face: six">
+            <img class="dices_game" id="d3" src="./assets/lm_6.png" alt="Dice face: six">
+        </div>
+        <h3 id="computer">Computer</h3>
+        <div>
+            <img class="dices_game" id="d4" src="./assets/lm_6.png" alt="Dice face: six">
+            <img class="dices_game" id="d5" src="./assets/lm_6.png" alt="Dice face: six">
+            <img class="dices_game" id="d6" src="./assets/lm_6.png" alt="Dice face: six">
+        </div>
+        <p class="span" id="span_points">Roll the dices first!</p>
+        <p class="span" id="span_score">Score: Player 0 x 0 Computer</p>
+    </section>
+
+    <footer>
+        <h3>*Criado por Beatriz Sousa</h3>
+    </footer>
+</body>
+</html>

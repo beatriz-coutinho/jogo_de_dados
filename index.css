@@ -1,0 +1,168 @@
+:root {
+    --darkmode-background: #161d34;
+    --darkmode-letters: #e4eaff;
+    --darkmode-rules-bg: #252c43e2;
+
+    --lightmode-background: rgb(137, 218, 255);
+    --lightmode-letters: #05175f;
+    --lightmode-rules-bg: #9adffde4;
+    --lightmode-shadow: rgba(60, 94, 145, 0.742);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--lightmode-background);
+    color: var(--lightmode-letters);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+}
+
+header div {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+header div img {
+    width: 65px;
+}
+
+header input, i {
+    cursor: pointer;
+}
+
+.bi-sun {
+    display: none;
+}
+
+header div h1 {
+    font-size: 50px;
+}
+
+.rules_box {
+    background-color: var(--lightmode-rules-bg);
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    border: 1px dotted var(--lightmode-letters);
+    border-radius: 20px;
+    margin: 0 29% 4% 29%;
+}
+
+.rules_box div {
+    display: flex;
+    align-items: center;
+}
+
+.rules_box img {
+    width: 38px;
+}
+
+.game {
+    background-color: var(--lightmode-rules-bg);
+    width: fit-content;
+    padding: 2.5rem;
+    border: 1px solid var(--lightmode-letters);
+    border-radius: 20px;
+    margin: auto;
+    max-width:1000px;
+    max-height: 692px;
+}
+
+.text {
+    margin: 0 0.2rem 0.2rem 3rem;
+    display: flex;
+    width: fit-content;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.game p button {
+    background-color: var(--lightmode-background);
+    border-radius: 5px;
+    padding: 0.2rem;
+    border-color: var(--lightmode-letters);
+    cursor: pointer;
+}
+
+.game h3 {
+    font-size: 25px;
+}
+
+.game div {
+    border: 1px dotted var(--lightmode-letters);
+    border-radius: 10px;
+    margin:  0.5rem 0;
+    max-height: 96px;
+}
+
+.game div img {
+    width: 85px;
+}
+
+.span {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+    border: 1px double var(--lightmode-letters);
+    border-radius: 5px;
+}
+
+footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: var(--lightmode-letters);
+}
+
+
+
+/* DARK MODE */
+
+.dark {
+    background-color: var(--darkmode-background);
+    color: var(--darkmode-letters);
+}
+
+.dark .game button {
+    background-color: var(--darkmode-background);
+    color: var(--darkmode-letters);
+    border-color: var(--darkmode-letters);
+}
+
+.dark .rules_box,
+.dark .game {
+    background-color: var(--darkmode-rules-bg);
+    border-color: var(--darkmode-letters);
+}
+
+.dark .game div {
+    border-color: var(--darkmode-letters);
+}
+
+.dark .bi-sun {
+    display: block;
+}
+
+.dark .bi-moon {
+    display: none;
+}
+
+.dark footer {
+    color: var(--darkmode-letters);
+}
